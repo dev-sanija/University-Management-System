@@ -137,15 +137,31 @@
   <ItemGroup>
     <Resource Include="Resources\ICON IMG.png" />
     <Resource Include="Resources\ICON.ico" />
-    <Resource Include="Resources\ICONS\lock.png" />
-    <Resource Include="Resources\ICONS\user.png" />
     <Resource Include="Resources\IMAGE.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\lock.png" />
+    <Resource Include="Resources\lock.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\user.png" />
+    <Resource Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\apprentice1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\faculty.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\event check.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\user manage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\setting.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

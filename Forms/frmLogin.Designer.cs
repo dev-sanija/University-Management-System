@@ -31,15 +31,15 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-            this.txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
             this.ShadowPanellogin = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.labelStatus2 = new System.Windows.Forms.Label();
+            this.labelStatus1 = new System.Windows.Forms.Label();
+            this.linkRegister = new System.Windows.Forms.LinkLabel();
+            this.btnGuest = new Guna.UI2.WinForms.Guna2Button();
+            this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
             this.labelMain = new System.Windows.Forms.Label();
             this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
-            this.btnLogin = new Guna.UI2.WinForms.Guna2Button();
-            this.btnGuest = new Guna.UI2.WinForms.Guna2Button();
-            this.linkRegister = new System.Windows.Forms.LinkLabel();
-            this.labelStatus1 = new System.Windows.Forms.Label();
-            this.labelStatus2 = new System.Windows.Forms.Label();
+            this.txtUsername = new Guna.UI2.WinForms.Guna2TextBox();
             this.ShadowPanellogin.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -51,28 +51,7 @@
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2BorderlessForm1.HasFormShadow = false;
             this.guna2BorderlessForm1.ResizeForm = false;
-            // 
-            // txtUsername
-            // 
-            this.txtUsername.Animated = true;
-            this.txtUsername.BorderRadius = 5;
-            this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtUsername.DefaultText = "";
-            this.txtUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtUsername.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUsername.Font = new System.Drawing.Font("Segoe UI Historic", 9.75F, System.Drawing.FontStyle.Bold);
-            this.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtUsername.IconLeft = global::UniEventApp.Properties.Resources.user;
-            this.txtUsername.Location = new System.Drawing.Point(36, 128);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.PlaceholderText = "Enter Your Username";
-            this.txtUsername.SelectedText = "";
-            this.txtUsername.Size = new System.Drawing.Size(358, 48);
-            this.txtUsername.TabIndex = 1;
-            this.txtUsername.TextOffset = new System.Drawing.Point(10, 0);
+            this.guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
             // ShadowPanellogin
             // 
@@ -94,6 +73,79 @@
             this.ShadowPanellogin.ShadowShift = 10;
             this.ShadowPanellogin.Size = new System.Drawing.Size(430, 500);
             this.ShadowPanellogin.TabIndex = 0;
+            // 
+            // labelStatus2
+            // 
+            this.labelStatus2.AutoSize = true;
+            this.labelStatus2.Font = new System.Drawing.Font("Georgia", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelStatus2.Location = new System.Drawing.Point(219, 454);
+            this.labelStatus2.Name = "labelStatus2";
+            this.labelStatus2.Size = new System.Drawing.Size(32, 14);
+            this.labelStatus2.TabIndex = 8;
+            this.labelStatus2.Text = "N/A";
+            // 
+            // labelStatus1
+            // 
+            this.labelStatus1.AutoSize = true;
+            this.labelStatus1.Font = new System.Drawing.Font("Georgia", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelStatus1.Location = new System.Drawing.Point(164, 454);
+            this.labelStatus1.Name = "labelStatus1";
+            this.labelStatus1.Size = new System.Drawing.Size(54, 14);
+            this.labelStatus1.TabIndex = 7;
+            this.labelStatus1.Text = "Status :";
+            // 
+            // linkRegister
+            // 
+            this.linkRegister.AutoSize = true;
+            this.linkRegister.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.linkRegister.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
+            this.linkRegister.LinkColor = System.Drawing.Color.MidnightBlue;
+            this.linkRegister.Location = new System.Drawing.Point(167, 407);
+            this.linkRegister.Name = "linkRegister";
+            this.linkRegister.Size = new System.Drawing.Size(98, 17);
+            this.linkRegister.TabIndex = 6;
+            this.linkRegister.TabStop = true;
+            this.linkRegister.Text = "Register Now !";
+            // 
+            // btnGuest
+            // 
+            this.btnGuest.Animated = true;
+            this.btnGuest.BorderRadius = 5;
+            this.btnGuest.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnGuest.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnGuest.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnGuest.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnGuest.FillColor = System.Drawing.Color.DarkGreen;
+            this.btnGuest.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Bold);
+            this.btnGuest.ForeColor = System.Drawing.Color.White;
+            this.btnGuest.HoverState.FillColor = System.Drawing.Color.ForestGreen;
+            this.btnGuest.IndicateFocus = true;
+            this.btnGuest.Location = new System.Drawing.Point(91, 344);
+            this.btnGuest.Name = "btnGuest";
+            this.btnGuest.Size = new System.Drawing.Size(248, 45);
+            this.btnGuest.TabIndex = 4;
+            this.btnGuest.Text = "Continue As Guest";
+            this.btnGuest.Click += new System.EventHandler(this.btnGuest_Click);
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.Animated = true;
+            this.btnLogin.BorderRadius = 5;
+            this.btnLogin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnLogin.FillColor = System.Drawing.Color.RoyalBlue;
+            this.btnLogin.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogin.ForeColor = System.Drawing.Color.White;
+            this.btnLogin.HoverState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.btnLogin.IndicateFocus = true;
+            this.btnLogin.Location = new System.Drawing.Point(91, 288);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(248, 45);
+            this.btnLogin.TabIndex = 3;
+            this.btnLogin.Text = "Login";
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // labelMain
             // 
@@ -129,76 +181,27 @@
             this.txtPassword.TabIndex = 1;
             this.txtPassword.TextOffset = new System.Drawing.Point(10, 0);
             // 
-            // btnLogin
+            // txtUsername
             // 
-            this.btnLogin.Animated = true;
-            this.btnLogin.BorderRadius = 5;
-            this.btnLogin.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnLogin.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnLogin.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnLogin.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnLogin.FillColor = System.Drawing.Color.RoyalBlue;
-            this.btnLogin.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.HoverState.FillColor = System.Drawing.Color.DodgerBlue;
-            this.btnLogin.IndicateFocus = true;
-            this.btnLogin.Location = new System.Drawing.Point(91, 288);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(248, 45);
-            this.btnLogin.TabIndex = 3;
-            this.btnLogin.Text = "Login";
-            // 
-            // btnGuest
-            // 
-            this.btnGuest.Animated = true;
-            this.btnGuest.BorderRadius = 5;
-            this.btnGuest.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnGuest.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnGuest.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnGuest.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnGuest.FillColor = System.Drawing.Color.DarkGreen;
-            this.btnGuest.Font = new System.Drawing.Font("Georgia", 9.75F, System.Drawing.FontStyle.Bold);
-            this.btnGuest.ForeColor = System.Drawing.Color.White;
-            this.btnGuest.HoverState.FillColor = System.Drawing.Color.ForestGreen;
-            this.btnGuest.IndicateFocus = true;
-            this.btnGuest.Location = new System.Drawing.Point(91, 344);
-            this.btnGuest.Name = "btnGuest";
-            this.btnGuest.Size = new System.Drawing.Size(248, 45);
-            this.btnGuest.TabIndex = 4;
-            this.btnGuest.Text = "Continue As Guest";
-            // 
-            // linkRegister
-            // 
-            this.linkRegister.AutoSize = true;
-            this.linkRegister.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.linkRegister.LinkBehavior = System.Windows.Forms.LinkBehavior.NeverUnderline;
-            this.linkRegister.LinkColor = System.Drawing.Color.MidnightBlue;
-            this.linkRegister.Location = new System.Drawing.Point(167, 407);
-            this.linkRegister.Name = "linkRegister";
-            this.linkRegister.Size = new System.Drawing.Size(98, 17);
-            this.linkRegister.TabIndex = 6;
-            this.linkRegister.TabStop = true;
-            this.linkRegister.Text = "Register Now !";
-            // 
-            // labelStatus1
-            // 
-            this.labelStatus1.AutoSize = true;
-            this.labelStatus1.Font = new System.Drawing.Font("Georgia", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelStatus1.Location = new System.Drawing.Point(164, 454);
-            this.labelStatus1.Name = "labelStatus1";
-            this.labelStatus1.Size = new System.Drawing.Size(54, 14);
-            this.labelStatus1.TabIndex = 7;
-            this.labelStatus1.Text = "Status :";
-            // 
-            // labelStatus2
-            // 
-            this.labelStatus2.AutoSize = true;
-            this.labelStatus2.Font = new System.Drawing.Font("Georgia", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelStatus2.Location = new System.Drawing.Point(219, 454);
-            this.labelStatus2.Name = "labelStatus2";
-            this.labelStatus2.Size = new System.Drawing.Size(32, 14);
-            this.labelStatus2.TabIndex = 8;
-            this.labelStatus2.Text = "N/A";
+            this.txtUsername.Animated = true;
+            this.txtUsername.BorderRadius = 5;
+            this.txtUsername.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtUsername.DefaultText = "";
+            this.txtUsername.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtUsername.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtUsername.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUsername.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtUsername.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUsername.Font = new System.Drawing.Font("Segoe UI Historic", 9.75F, System.Drawing.FontStyle.Bold);
+            this.txtUsername.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtUsername.IconLeft = global::UniEventApp.Properties.Resources.user;
+            this.txtUsername.Location = new System.Drawing.Point(36, 128);
+            this.txtUsername.Name = "txtUsername";
+            this.txtUsername.PlaceholderText = "Enter Your Username";
+            this.txtUsername.SelectedText = "";
+            this.txtUsername.Size = new System.Drawing.Size(358, 48);
+            this.txtUsername.TabIndex = 1;
+            this.txtUsername.TextOffset = new System.Drawing.Point(10, 0);
             // 
             // frmLogin
             // 
@@ -209,6 +212,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LOGIN";

@@ -16,5 +16,10 @@ namespace UniEventApp.Forms
         {
             InitializeComponent();
         }
+
+        private void frmAdminConsole_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit(); // safely terminates the whole application when the admin console closes
+        }
     }
 }
